@@ -27,7 +27,7 @@ function App() {
 					</CountCard>
 					<CountCardMemo title={`Memo counter memo `} value={onlyRight} memo>
 						<DisplayValueMemo title="global" value={trigger.state} />
-						<DisplayValueMemo title="spreaded" value={{ ...data }} />
+						{/* <DisplayValueMemo title="spreaded" value={{ ...data }} /> */}
 						<DisplayValueMemo title="object" value={data} />
 					</CountCardMemo>
 				</div>
