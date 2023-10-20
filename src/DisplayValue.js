@@ -4,7 +4,7 @@ export function DisplayValue(props) {
 	return (
 		<div>
 			<p>
-				{typeof props.value} {JSON.stringify(props.value, null, 2)}
+				{props.title}: {JSON.stringify(props.value, null, 2)}
 			</p>
 		</div>
 	);

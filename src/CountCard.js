@@ -13,13 +13,14 @@ export function CountCard(props) {
 	};
 
 	return (
-		<div className="card" style={{ width: '18rem' }}>
+		<div className="card m-5" style={{ width: '18rem' }}>
 			<div className="card-body">
 				<h4 className="card-title">{props.title}</h4>
 				{props.children}
-				<Display value={count} />
+				<Display title="props" value={props.value} />
+				<Display title="internal" value={count} />
 				<button className="btn btn-secondary" onClick={onClick}>
-					increment
+					increment from inside
 				</button>
 			</div>
 		</div>
